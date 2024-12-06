@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.yuji-mai-regular {
+  font-family: "Yuji Mai", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.custom-box {
+  @apply rounded-[50px] bg-[#e0e0e0];
+
+  text-shadow: 2px;
+  letter-spacing: 3px;
+  box-shadow: inset -20px 20px 60px #e8f4f7, inset 20px -20px 60px #ffffff;
+}
+.custom-box::first-letter {
+  font-size: 30px; /* Make the first letter larger */
+  font-weight: bold; /* Optionally, make it bold */
+  color: #0cc93b; /* Change color if needed */
+  /* Optional: float the letter for styling purposes */
+  /* Optional: add some space after the large letter */
+}
